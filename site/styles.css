@@ -140,8 +140,8 @@ h1 {
   padding: 1.5rem;
   border-radius: 12px;
   transition: transform 0.2s ease, opacity 0.2s ease;
-  width: 280px;
-  height: 100px;
+  width: 320px;
+  height: 120px;
 }
 
 .app-store-button a:hover {
@@ -151,8 +151,8 @@ h1 {
 }
 
 .app-store-button img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 85%;
+  max-height: 85%;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -161,7 +161,7 @@ h1 {
 /* Google Play badge specific styling */
 .app-store-button img[alt="Get it on Google Play"] {
   height: auto;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* Responsive adjustments */
@@ -194,6 +194,11 @@ h1 {
     width: 200px;
     height: 70px;
     padding: 1.25rem;
+  }
+  
+  .app-store-button img {
+    max-width: 90%;
+    max-height: 90%;
   }
 }
 
