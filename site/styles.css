@@ -127,17 +127,22 @@ h1 {
 
 .app-store-button {
   display: inline-block;
-  margin-top: var(--spacing-unit);
-  transition: opacity 0.2s ease;
+  margin-top: calc(var(--spacing-unit) * 1.5);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
 }
 
 .app-store-button img {
-  height: 48px;
+  height: 64px;
   width: auto;
 }
 
 .app-store-button:hover {
-  opacity: 0.8;
+  opacity: 0.85;
+  transform: scale(1.05);
+  background: rgba(43, 87, 151, 0.05);
 }
 
 /* Responsive adjustments */
@@ -152,6 +157,10 @@ h1 {
   
   .features {
     grid-template-columns: 1fr;
+  }
+  
+  .app-store-button img {
+    height: 56px;
   }
 }
 
