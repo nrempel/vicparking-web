@@ -126,33 +126,34 @@ h1 {
 }
 
 .app-store-button {
-  display: inline-block;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
   margin-top: calc(var(--spacing-unit) * 1.5);
-  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.app-store-button a {
+  display: inline-block;
   padding: 1rem;
   border-radius: 12px;
-  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.app-store-button img {
-  height: 64px;
-  width: auto;
-}
-
-/* Google Play badge specific styling */
-.app-store-button img[alt="Get it on Google Play"] {
-  height: 90px;
-}
-
-.app-store-button:hover {
+.app-store-button a:hover {
   opacity: 0.85;
   transform: scale(1.05);
   background: rgba(43, 87, 151, 0.05);
 }
 
-.app-store-button a,
 .app-store-button img {
-  cursor: pointer;
+  height: 48px;
+  width: auto;
+}
+
+/* Google Play badge specific styling */
+.app-store-button img[alt="Get it on Google Play"] {
+  height: 48px;
 }
 
 /* Responsive adjustments */
@@ -167,6 +168,10 @@ h1 {
   
   .features {
     grid-template-columns: 1fr;
+  }
+  
+  .app-store-button {
+    flex-direction: column;
   }
   
   .app-store-button img {
