@@ -145,6 +145,11 @@ h1 {
   background: rgba(43, 87, 151, 0.05);
 }
 
+.app-store-button a,
+.app-store-button img {
+  cursor: pointer;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   h1 {
