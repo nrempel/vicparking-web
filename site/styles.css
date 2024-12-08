@@ -70,6 +70,48 @@ h1 {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.privacy-policy {
+  text-align: left;
+}
+
+.privacy-policy h1 {
+  text-align: center;
+}
+
+.policy-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: var(--spacing-unit);
+  border-radius: 12px;
+}
+
+.policy-content section {
+  margin-bottom: var(--spacing-unit);
+}
+
+.policy-content h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.policy-content p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: var(--spacing-unit);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   h1 {
