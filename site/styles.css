@@ -19,6 +19,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: var(--spacing-unit);
+  padding-bottom: calc(var(--spacing-unit) * 2);
   text-align: center;
 }
 
@@ -102,14 +103,17 @@ h1 {
 
 .back-link {
   display: inline-block;
-  margin-top: var(--spacing-unit);
+  padding: 0.5rem 1rem;
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
 }
 
 .back-link:hover {
-  text-decoration: underline;
+  background-color: rgba(43, 87, 151, 0.05);
+  text-decoration: none;
 }
 
 /* Responsive adjustments */
@@ -125,4 +129,11 @@ h1 {
   .features {
     grid-template-columns: 1fr;
   }
+}
+
+footer {
+  margin-top: var(--spacing-unit);
+  padding: var(--spacing-unit);
+  text-align: center;
+  border-top: 1px solid rgba(43, 87, 151, 0.1);
 }
